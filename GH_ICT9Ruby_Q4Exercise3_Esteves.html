@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>ICT Mathematical Conversions</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.3/dist/jquery.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+
+<body style="background-image: url(https://png.pngtree.com/background/20210712/original/pngtree-hand-drawn-education-math-background-picture-image_1176980.jpg); background-size: revert; background-attachment: fixed; background-size: cover; background-repeat: no-repeat;">
+  <br><br><br>
+    
+  <div class="row">
+    <div class="col-xl-2"></div>
+    <div class="col-xl-8">
+    <table class="table" >
+      <tbody>
+        <br><br>
+        <tr><td class="text-dark" style="text-align: center;" ><h4>Length Conversions</h4></td></tr> 
+        <tr><td>
+           <center> 
+            <h1 class="text-dark">Conversion Corner</h1>
+            <br>
+            <b><p style="color: darkslateblue;"> Enter your value in centimeters and it will conver to feet.</p></b>
+            <p style="color: darkslateblue;"> <b>Formula:</b> Divide the length value by 30.48</p>
+
+            <input id="cm_num" style="text-align:center;"> <b>cm</b> &emsp;
+            <button class="btn btn-primary btn-sm" type="button" onclick="convert_funct()">Submit</button>
+            <br><br>
+            <p id="convert"></p>
+            <script>
+            function convert_funct() {
+              // Get the value of the input field with id="numb"
+              let x = document.getElementById("cm_num").value;
+              // If x is Not a Number or less than one or greater than 10
+              let text;
+              if (isNaN(x)) {
+                result = "Input not valid! Please enter a number.";
+              } else {
+                result = x/30.48;
+              }
+              document.getElementById("convert").innerHTML = result;
+            }
+            </script>
+          </center>
+  </div>
+  <div class="col-xl-2"></div>
+  <br><br>
+  
+  <div class="container-fluid bg-dark">
+  
+      
+  </div>
+
+</body>
+</html>
